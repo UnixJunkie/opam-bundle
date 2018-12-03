@@ -1,16 +1,10 @@
-opam-bundle(1)                Opam-bundle Manual                opam-bundle(1)
+opam-bundle(1) Opam-bundle Manual opam-bundle(1)
 
-NAME
-       opam-bundle - Creates standalone source bundle from opam packages
+NAME opam-bundle - Creates standalone source bundle from opam packages
 
-SYNOPSIS
-       opam-bundle [OPTION]... PACKAGE...
+SYNOPSIS opam-bundle [OPTION]... PACKAGE...
 
-DESCRIPTION
-       This utility can extract a set of packages from opam repositories, and
-       bundle them together in a comprehensive source archive, with the
-       scripts needed to bootstrap OCaml, opam, and install the packages on a
-       fresh, network-less system.
+DESCRIPTION This utility can extract a set of packages from opam repositories, and bundle them together in a comprehensive source archive, with the scripts needed to bootstrap OCaml, opam, and install the packages on a fresh, network-less system.
 
        The opam-depext plugin is included to try and get the required system
        dependencies on the target system (which might, in this case, require
@@ -43,20 +37,9 @@ DESCRIPTION
        wrappers to keep working. Besides the wrappers, nothing is written
        outside of the directory where the bundle was untarred.
 
-ARGUMENTS
-       PACKAGE (required)
-           List of packages to include in the bundle. Their dependencies will
-           be included as well, but only listed packages will have wrappers
-           installed. Packages can be specified as NAME[CONSTRAINT][@URL],
-           where CONSTRAINT is an optional version constraint starting with
-           one of . or =, !=, >, >=, < or <=, and @URL can be specified to use
-           the package source from the given URL (in which case, the
-           constraint, if any, must be . or =).
+ARGUMENTS PACKAGE (required) List of packages to include in the bundle. Their dependencies will be included as well, but only listed packages will have wrappers installed. Packages can be specified as NAME[CONSTRAINT][@URL], where CONSTRAINT is an optional version constraint starting with one of . or =, !=, \>, \>=, \< or \<=, and @URL can be specified to use the package source from the given URL (in which case, the constraint, if any, must be . or =).
 
-OPTIONS
-       -d, --with-doc
-           Include the packages' doc-only dependencies in the bundle, and make
-           the bundle generate their documentation.
+OPTIONS -d, --with-doc Include the packages' doc-only dependencies in the bundle, and make the bundle generate their documentation.
 
        --debug
            Display debug information about what's going on.
@@ -107,4 +90,4 @@ OPTIONS
        -y, --yes
            Confirm all prompts without asking.
 
-Opam-bundle                                                     opam-bundle(1)
+Opam-bundle opam-bundle(1)
